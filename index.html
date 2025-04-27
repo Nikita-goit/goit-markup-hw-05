@@ -62,7 +62,9 @@
       <section class="section-button">
         <div class="container">
           <h1 class="headline-main">Effective Solutions for Your Business</h1>
-          <button type="button" class="main-button">Order Service</button>
+          <button type="button" class="main-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -131,7 +133,7 @@
           <ul class="ul-dream-team">
             <li class="list-item-team">
               <img
-                src="./images/img-1.jpg"
+                src="./images/img_1.jpg"
                 width="264"
                 height="260"
                 alt="developer"
@@ -173,7 +175,7 @@
             </li>
             <li class="list-item-team">
               <img
-                src="./images/img-2.jpg"
+                src="./images/img_2.jpg"
                 width="264"
                 height="260"
                 alt="developer"
@@ -215,7 +217,7 @@
             </li>
             <li class="list-item-team">
               <img
-                src="./images/img-3.jpg"
+                src="./images/img_3.jpg"
                 width="264"
                 height="260"
                 alt="developer"
@@ -257,7 +259,7 @@
             </li>
             <li class="list-item-team">
               <img
-                src="./images/img-4.jpg"
+                src="./images/img_4.jpg"
                 width="264"
                 height="260"
                 alt="developer"
@@ -301,7 +303,7 @@
         </div>
       </section>
 
-      <!-- Section portfolio-->
+      <!-- section portfolio-->
 
       <section class="section">
         <div class="container">
@@ -310,7 +312,7 @@
             <li class="item-portfolio">
               <div class="thumb">
                 <img
-                  src="./images/img-5.jpg"
+                  src="./images/img_5.jpg"
                   alt="banking app"
                   width="360"
                   height="300"
@@ -331,7 +333,7 @@
             <li class="item-portfolio">
               <div class="thumb">
                 <img
-                  src="./images/img-6.jpg"
+                  src="./images/img_6.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -351,7 +353,7 @@
             <li class="item-portfolio">
               <div class="thumb">
                 <img
-                  src="./images/img-7.jpg"
+                  src="./images/img_7.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -371,7 +373,7 @@
             <li class="item-portfolio">
               <div class="thumb">
                 <img
-                  src="./images/img-8.jpg"
+                  src="./images/img_8.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -390,7 +392,7 @@
             <li class="item-portfolio">
               <div class="thumb">
                 <img
-                  src="./images/img-9.jpg"
+                  src="./images/img_9.jpg"
                   alt="Screen illustrations"
                   width="360"
                   height="300"
@@ -410,7 +412,7 @@
             <li class="item-portfolio">
               <div class="thumb">
                 <img
-                  src="./images/img-10.jpg"
+                  src="./images/img_10.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -432,7 +434,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="section-footer">
       <div class="container flex-cont">
         <div class="cont-footer-logo">
@@ -477,7 +479,115 @@
             </li>
           </ul>
         </div>
+        <div class="form-container-footer">
+          <p class="subscribe-footer">Subscribe</p>
+          <form class="form-input-footer">
+            <label class="label-footer">
+              <input
+                type="email"
+                name="footer-input-name"
+                autocomplete="on"
+                id="footer-input"
+                class="email-input-foot"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button type="submit" class="button-footer">
+              Subscribe
+              <svg width="24" height="24" class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- modal -->
+    <div class="modal" data-modal>
+      <div class="overlay-modal">
+        <button type="button" class="button-close-modal" data-modal-close>
+          <svg class="icon-close-modal" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="text-modal">Leave your contacts and we will call you back</p>
+        <form name="regisrattion" autocomplete="on" novalidate>
+          <div class="div-form-modal">
+            <label for="user-name" class="label-name">Name</label>
+            <div class="div-input-icons">
+              <input
+                type="text"
+                name="user-name"
+                class="text-input"
+                id="user-name"
+              />
+              <svg class="icon-name-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="div-form-modal">
+            <label for="phone-input" class="label-name">Phone</label>
+            <div class="div-input-icons">
+              <input
+                type="tel"
+                name="tel"
+                class="text-input"
+                id="phone-input"
+              />
+              <svg class="icon-name-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="div-form-modal">
+            <label for="email-input" class="label-name">Email</label>
+            <div class="div-input-icons">
+              <input
+                type="email"
+                name="email"
+                class="text-input"
+                id="email-input"
+              />
+              <svg class="icon-name-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="container-text-area">
+            <label for="user-comment" class="label-name">Comment</label>
+            <textarea
+              class="textarea-modal"
+              name="user-comment"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="container-checbox">
+            <input
+              type="checkbox"
+              class="checked-form visually-hidden"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+            />
+            <label for="user-privacy" class="label-checked">
+              
+              <span class="checked-box">
+                <svg class="icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                   </svg>
+                  </span>
+              I accept the terms and conditions of the
+              <a class="link-checked">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="send-button">Send</button>
+        </form>
+    </div>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
